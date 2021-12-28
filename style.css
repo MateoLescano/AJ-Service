@@ -1,0 +1,42 @@
+.navbar-brand img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.navbar.navbar-expand-lg.navbar-dark {
+  background-color: #000080;
+}
+
+.navbar.navbar-expand-lg.navbar-dark a, .navbar.navbar-expand-lg.navbar-dark a.nav-link.active {
+  color: whitesmoke;
+  font-size: 1.3em;
+  font-font-family: sans-serif;
+}
+
+.navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show {
+  background-color: #CF352E;
+}
+
+main #Hero {
+  height: 100vh;
+  background-image: url("hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main #Hero .row.align-items-center {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #Hero .row.align-items-center .col {
+  color: whitesmoke;
+}
+/*# sourceMappingURL=style.css.map */

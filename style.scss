@@ -1,0 +1,52 @@
+$fontPrincipal: sans-serif;
+
+.navbar-brand{
+    img{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+}
+
+.navbar.navbar-expand-lg.navbar-dark{
+    background-color: #000080;
+
+    a, a.nav-link.active{
+        color: whitesmoke;
+        font: {
+            size: 1.3em;
+            font-family: $fontPrincipal;
+        };
+    }
+
+    .dropdown-menu.show{
+        background-color: #CF352E;
+    }
+}
+
+main {
+    #Hero{
+        height: 100vh;
+        background: {
+            image: url("hero.png");
+            repeat: no-repeat;
+            position: center;
+            size: cover;
+        };
+
+        .row.align-items-center{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            
+            .col{
+                color: whitesmoke;
+            }
+        }    
+        
+        
+        
+    }
+
+
+}
