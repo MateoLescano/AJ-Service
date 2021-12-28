@@ -19,7 +19,7 @@
 }
 
 main #Hero {
-  height: 100vh;
+  height: 91vh;
   background-image: url("hero.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -36,7 +36,7 @@ main #Hero .row.align-items-center {
           justify-content: center;
 }
 
-main #Hero .row.align-items-center .col {
-  color: whitesmoke;
+main #Hero .row.align-items-center .col.text-center a {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */

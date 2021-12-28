@@ -26,7 +26,7 @@ $fontPrincipal: sans-serif;
 
 main {
     #Hero{
-        height: 100vh;
+        height: 91vh;
         background: {
             image: url("hero.png");
             repeat: no-repeat;
@@ -38,15 +38,14 @@ main {
             height: 100%;
             display: flex;
             justify-content: center;
-            
-            .col{
-                color: whitesmoke;
+
+            .col.text-center{
+                a{
+                    font-size: 30px;
+                }
             }
         }    
         
-        
-        
     }
-
 
 }
