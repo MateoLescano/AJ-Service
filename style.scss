@@ -59,6 +59,14 @@ $colorSecundario: #CF352E;
 
 main {
 
+    hr{
+        height: 3px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
     #NuestroTaller{
         height: 100vh;
         display: flex;
@@ -74,15 +82,12 @@ main {
         }
 
         p{
-            @include font(3em, $fontPrincipal);
-            color: red;
+            @include font(1.5em, $fontPrincipal);
         }
 
         .Review{
-            
             width: 100%;
             
-
             h3{
                 @include font(2em, $fontPrincipal);
                 color: black;
