@@ -56,6 +56,7 @@ main hr {
 }
 
 main #NuestroTaller {
+  margin-top: 40px;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,10 +111,8 @@ main #NuestroTaller .Review h4 {
 }
 
 main #Servicios {
-  height: 100vh;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+  height: 100%;
+  min-height: 100vh;
 }
 
 main #Servicios .row.align-items-center {
@@ -139,7 +138,6 @@ main #Servicios .row.align-items-center h2 {
 main #Servicios .row.align-items-center h3 {
   font-size: 2em;
   font-family: "Nunito", sans-serif;
-  text-decoration: underline;
 }
 
 main #Servicios .row.align-items-center .col.text-center article img {
@@ -155,8 +153,9 @@ main #Servicios .row.align-items-center .col.text-center article h2 {
 }
 
 main #Servicios .row.align-items-center .col.text-center article a {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
+  pointer-events: none;
 }
 
 main #Servicios .row.align-items-center button {
@@ -173,10 +172,8 @@ main #Servicios .row.align-items-center button:hover {
 }
 
 main #Productos {
-  height: 100vh;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+  height: 100%;
+  min-height: 100vh;
 }
 
 main #Productos .row.align-items-center {
@@ -205,6 +202,15 @@ main #Productos .row.align-items-center h3 {
   text-decoration: underline;
 }
 
+main #Productos .row.align-items-center #linkTodos {
+  text-transform: uppercase;
+}
+
+main #Productos .row.align-items-center a {
+  text-decoration: underline;
+  color: black;
+}
+
 main #Productos .row.align-items-center .col.text-center article img {
   width: 200px;
   height: 200px;
@@ -215,10 +221,5 @@ main #Productos .row.align-items-center .col.text-center article img {
 main #Productos .row.align-items-center .col.text-center article h2 {
   font-size: 2em;
   font-family: "Nunito", sans-serif;
-}
-
-main #Productos .row.align-items-center .col.text-center article a {
-  text-decoration: underline;
-  color: black;
 }
 /*# sourceMappingURL=style.css.map */

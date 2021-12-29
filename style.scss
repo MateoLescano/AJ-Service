@@ -68,6 +68,7 @@ main {
     }
 
     #NuestroTaller{
+        margin-top: 40px;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -109,9 +110,8 @@ main {
     }
 
     #Servicios{
-        height: 100vh;
-        
-        min-height: fit-content;
+        height: 100%;
+        min-height: 100vh;
 
         .row.align-items-center{
             height: 90%;
@@ -127,7 +127,6 @@ main {
 
             h3{
                 @include font(2em, $fontPrincipal);
-                text-decoration: underline;
             }
 
             .col.text-center{
@@ -145,8 +144,9 @@ main {
                     }
 
                     a{
-                        text-decoration: underline;
+                        text-decoration: none;
                         color: black;
+                        pointer-events: none;
                     }
                 }
             }
@@ -168,8 +168,8 @@ main {
     }
 
     #Productos{
-        height: 100vh;
-        min-height: fit-content;
+        height: 100%;
+        min-height: 100vh;
 
         .row.align-items-center{
             height: 90%;
@@ -188,6 +188,15 @@ main {
                 text-decoration: underline;
             }
 
+            #linkTodos{
+                text-transform: uppercase;
+            }
+
+            a{
+                text-decoration: underline;
+                color: black;
+            }
+
             .col.text-center{
                 article{
                     
@@ -202,10 +211,7 @@ main {
                         @include font(2em, $fontPrincipal);
                     }
 
-                    a{
-                        text-decoration: underline;
-                        color: black;
-                    }
+                    
                 }
             }
 
