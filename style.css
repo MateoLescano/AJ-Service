@@ -319,8 +319,61 @@ main #Contacto #ctmain #Mapa #map {
   background-color: whitesmoke;
 }
 
+main #Contacto #ctmain #Mapa h4 {
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Contacto #ctmain #Mapa h3 {
+  font-size: 2em;
+  font-family: "Comfortaa", cursive;
+}
+
 main #Contacto #ctmain #Mapa img {
   width: 80px;
   height: 80px;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  background-color: #3b3c36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2vh;
+  color: white;
+}
+
+footer img {
+  border-radius: 5px;
+  height: 40px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+footer #by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

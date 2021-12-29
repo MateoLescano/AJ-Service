@@ -306,6 +306,14 @@ main {
                     height: 300px;
                     background-color: whitesmoke;
                 }
+
+                h4{
+                    @include font(2em,$fontPrincipal);
+                }
+
+                h3{
+                    @include font(2em,$fontSecundario);
+                }
     
                 img{
                     width: 80px;
@@ -313,13 +321,36 @@ main {
                 }
             }
         }
+        
 
 
     }
-
-
-
-
-
-
 }
+
+footer{
+    clear: both;
+    position: relative;
+    background-color: #3b3c36;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    padding: 2vh;
+    color: white;
+
+    img{
+        border-radius: 5px;
+        height: 40px;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    #by{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+  }
