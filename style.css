@@ -14,8 +14,16 @@
   font-family: "Comfortaa", cursive;
 }
 
+.navbar.navbar-expand-lg.navbar-dark a .dropdown-item, .navbar.navbar-expand-lg.navbar-dark a.nav-link.active .dropdown-item {
+  max-width: 300px;
+}
+
 .navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show {
   background-color: #CF352E;
+}
+
+.navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show .dropdown-item {
+  padding: 15px;
 }
 
 .navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show :hover {
@@ -221,5 +229,98 @@ main #Productos .row.align-items-center .col.text-center article img {
 main #Productos .row.align-items-center .col.text-center article h2 {
   font-size: 2em;
   font-family: "Nunito", sans-serif;
+}
+
+main #Contacto {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #000080;
+  color: whitesmoke;
+}
+
+main #Contacto #ctmain {
+  height: 100%;
+  min-height: 100vh;
+}
+
+main #Contacto #ctmain #Forma {
+  height: 100%;
+}
+
+main #Contacto #ctmain #Forma .col.text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main #Contacto #ctmain #Forma input, main #Contacto #ctmain #Forma select, main #Contacto #ctmain #Forma textarea {
+  border: #1b5583 solid 2px;
+  border-radius: 5px;
+  height: 2.5em;
+  width: 80%;
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Contacto #ctmain #Forma label {
+  font-size: 1.5em;
+  font-family: "Comfortaa", cursive;
+}
+
+main #Contacto #ctmain #Forma button {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #CF352E;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+main #Contacto #ctmain #Forma button:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.61);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.61);
+}
+
+main #Contacto #ctmain #Mapa {
+  height: 100%;
+}
+
+main #Contacto #ctmain #Mapa #map {
+  width: 300px;
+  height: 300px;
+  background-color: whitesmoke;
+}
+
+main #Contacto #ctmain #Mapa img {
+  width: 80px;
+  height: 80px;
 }
 /*# sourceMappingURL=style.css.map */

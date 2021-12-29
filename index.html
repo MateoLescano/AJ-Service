@@ -46,10 +46,8 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   SERVICIOS
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Cambio de Aceites y Filtros</a></li>
-                  <li><a class="dropdown-item" href="#">Sustitución de Escobillas de Limpiaparabrisas</a></li>
-                  <li><a class="dropdown-item" href="#">Sustitución de Baterías</a></li>
+                <ul id="svs" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Ver servicios</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Reservar un turno</a></li>
                 </ul>
@@ -67,7 +65,12 @@
                   <li><a class="dropdown-item" href="#">Refrigerantes</a></li>
                   <li><a class="dropdown-item" href="#">Escobillas</a></li>
                   <li><a class="dropdown-item" href="#">Liquido de Frenos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Ver todos</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-4" aria-current="page" href="#">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -113,7 +116,7 @@
         <section id="Servicios" class="container-fluid py-3">
           <div class="row align-items-center gy-5">
             <div class="col-12 text-center">
-              <h2>SERVICIOS</h2>
+              <h2>SERVICIOS QUE OFRECEMOS</h2>
             </div>
 
               <div class="col text-center my-5">
@@ -148,7 +151,7 @@
           <div class="row align-items-center gy-5">
 
             <div class="col-12 text-center">
-              <h2>PRODUCTOS</h2>
+              <h2>PRODUCTOS DISPONIBLES</h2>
             </div>
 
               <div class="col text-center">
@@ -208,6 +211,79 @@
               </div>
 
             </div> 
+        </section>
+
+        <section id="Contacto" class="container-fluid py-3">
+
+          <div id="ctmain" class="row align-items-center gy-5 gx-4">
+
+            <!-- Form -->
+            <div class="col text-center">
+
+              <form id="Forma" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
+                
+
+                  <div class="col text-center">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" required minlength="3" maxlength="15" placeholder="Obligatorio">
+                  </div>
+  
+                  <div class="col text-center">
+                    <label for="Mail">Mail</label>
+                    <input type="email" id="Mail" name="Mail" required placeholder="Obligatorio">
+                  </div>
+  
+                  <div class="w-100"></div>
+
+                  <div class="col text-center">
+                    <label for="Asunto">Asunto</label>
+                    <select name="Asunto" id="Asunto">
+                        <option value="curso">Curso</option>
+                        <option value="tratamiento">Tratamiento</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                  </div>
+  
+                  <div class="col text-center">
+                    <label for="Telefono">Teléfono</label>
+                    <input type="tel" id="Telefono" name="Telefono">
+                  </div>
+  
+                  <div class="w-100"></div>
+  
+                  <div class="col text-center">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea id="Mensaje" name="Mensaje"></textarea>
+                  </div>
+  
+                  <div class="w-100"></div>
+  
+                  <div class="col text-center">
+                    <button type="submit">Enviar Mensaje</button>
+                  </div>
+
+                
+                </form>
+
+            </div>
+
+            <!-- Mapa -->
+            <div class="col text-center">
+              <div id="Mapa" class="row align-items-center g-3">
+                <h4 id="tituloMapa">Donde Estamos</h4>
+                <div id="map"></div>
+                <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlau89Lhj-lVoosjYWbMw37vhpdTi3io4&callback=initMap&libraries=&v=weekly"></script>
+                <h3 id="direccion">Av. Federico Lacroze 2827 8ºF - CABA<br><br>
+                  Horario de atención: L. a V. de 8:00hs a 20:00hs
+                </h3>
+                <a href="https://api.whatsapp.com/send?phone=54911" target="_blank" rel="noopener noreferrer"><img id="wpp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1021px-WhatsApp.svg.png" alt="HTML tutorial"></a>
+
+              </div>          
+            </div>
+
+          </div>
+
         </section>
 
     </main>  
