@@ -111,6 +111,9 @@ main #NuestroTaller .Review h4 {
 
 main #Servicios {
   height: 100vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 main #Servicios .row.align-items-center {
@@ -167,5 +170,55 @@ main #Servicios .row.align-items-center button {
 
 main #Servicios .row.align-items-center button:hover {
   background-color: #000080;
+}
+
+main #Productos {
+  height: 100vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+main #Productos .row.align-items-center {
+  height: 90%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #Productos .row.align-items-center h2 {
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+main #Productos .row.align-items-center h3 {
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+  text-decoration: underline;
+}
+
+main #Productos .row.align-items-center .col.text-center article img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+main #Productos .row.align-items-center .col.text-center article h2 {
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Productos .row.align-items-center .col.text-center article a {
+  text-decoration: underline;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
