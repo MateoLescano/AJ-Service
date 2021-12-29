@@ -1,4 +1,14 @@
-$fontPrincipal: sans-serif;
+$fontPrincipal: 'Nunito', sans-serif;
+$fontSecundario: 'Comfortaa', cursive;
+$colorPrincipal: #000080;
+$colorSecundario: #CF352E;
+
+@mixin font($size,$fuente) {
+    font:{
+        size: $size;
+        family: $fuente;
+    };
+}
 
 .navbar-brand{
     img{
@@ -9,18 +19,19 @@ $fontPrincipal: sans-serif;
 }
 
 .navbar.navbar-expand-lg.navbar-dark{
-    background-color: #000080;
+    background-color: $colorPrincipal;
 
     a, a.nav-link.active{
         color: whitesmoke;
-        font: {
-            size: 1.3em;
-            font-family: $fontPrincipal;
-        };
+        @include font(1.3em, $fontSecundario);
     }
 
     .dropdown-menu.show{
-        background-color: #CF352E;
+        background-color: $colorSecundario;
+
+        :hover{
+            background-color: $colorPrincipal;
+        }
     }
 }
 
@@ -41,7 +52,9 @@ main {
 
             .col.text-center{
                 a{
-                    font-size: 30px;
+                    background-color: $colorSecundario;
+                    @include font(2em, $fontPrincipal);
+                    text-transform: uppercase;
                 }
             }
         }    

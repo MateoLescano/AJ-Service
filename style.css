@@ -11,11 +11,15 @@
 .navbar.navbar-expand-lg.navbar-dark a, .navbar.navbar-expand-lg.navbar-dark a.nav-link.active {
   color: whitesmoke;
   font-size: 1.3em;
-  font-font-family: sans-serif;
+  font-family: "Comfortaa", cursive;
 }
 
 .navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show {
   background-color: #CF352E;
+}
+
+.navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show :hover {
+  background-color: #000080;
 }
 
 main #Hero {
@@ -37,6 +41,9 @@ main #Hero .row.align-items-center {
 }
 
 main #Hero .row.align-items-center .col.text-center a {
-  font-size: 30px;
+  background-color: #CF352E;
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
