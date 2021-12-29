@@ -22,7 +22,7 @@
   background-color: #000080;
 }
 
-main #Hero {
+#Hero {
   height: 91vh;
   background-image: url("hero.png");
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ main #Hero {
   background-size: cover;
 }
 
-main #Hero .row.align-items-center {
+#Hero .row.align-items-center {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,10 +40,63 @@ main #Hero .row.align-items-center {
           justify-content: center;
 }
 
-main #Hero .row.align-items-center .col.text-center a {
+#Hero .row.align-items-center .col.text-center a {
   background-color: #CF352E;
   font-size: 2em;
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
+}
+
+main #Servicios {
+  height: 100vh;
+}
+
+main #Servicios .row.align-items-center {
+  height: 90%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #Servicios .row.align-items-center h2 {
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+  text-decoration: underline;
+}
+
+main #Servicios .row.align-items-center .col.text-center article img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+main #Servicios .row.align-items-center .col.text-center article h2 {
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Servicios .row.align-items-center .col.text-center article a {
+  text-decoration: underline;
+  color: black;
+}
+
+main #Servicios .row.align-items-center button {
+  background-color: #CF352E;
+  font-size: 2em;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  border-radius: 15px;
+  color: whitesmoke;
+}
+
+main #Servicios .row.align-items-center button:hover {
+  background-color: #000080;
 }
 /*# sourceMappingURL=style.css.map */

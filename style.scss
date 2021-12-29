@@ -35,30 +35,80 @@ $colorSecundario: #CF352E;
     }
 }
 
+#Hero{
+    height: 91vh;
+    background: {
+        image: url("hero.png");
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    };
+
+    .row.align-items-center{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        .col.text-center{
+            a{
+                background-color: $colorSecundario;
+                @include font(2em, $fontPrincipal);
+                text-transform: uppercase;
+            }
+        }
+    }    
+}
+
 main {
-    #Hero{
-        height: 91vh;
-        background: {
-            image: url("hero.png");
-            repeat: no-repeat;
-            position: center;
-            size: cover;
-        };
+
+    #Servicios{
+        height: 100vh;
 
         .row.align-items-center{
-            height: 100%;
+            height: 90%;
+            min-height: fit-content;
             display: flex;
             justify-content: center;
 
+            h2{
+                @include font(2em, $fontPrincipal);
+                text-decoration: underline;
+            }
+
             .col.text-center{
-                a{
-                    background-color: $colorSecundario;
-                    @include font(2em, $fontPrincipal);
-                    text-transform: uppercase;
+                article{
+                    
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 50%;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    h2{
+                        @include font(2em, $fontPrincipal);
+                    }
+
+                    a{
+                        text-decoration: underline;
+                        color: black;
+                    }
                 }
             }
-        }    
+
+            button{
+                background-color: $colorSecundario;
+                @include font(2em, $fontPrincipal);
+                text-transform: uppercase;
+                border-radius: 15px;
+                color: whitesmoke;
+                
+            &:hover{
+                    background-color: $colorPrincipal;
+                }
+            }
+        }
+        
         
     }
-
 }
