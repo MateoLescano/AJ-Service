@@ -27,11 +27,13 @@
 
   <body>
 
+    
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
-                <img src="https://static.vecteezy.com/system/resources/previews/002/839/983/original/aj-logo-letter-monogram-slash-with-modern-logo-designs-template-vector.jpg" alt="">
+                <img src="logo.png" alt="">
             </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,20 +43,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active mx-4" aria-current="page" href="#">NUESTRO TALLER</a>
+                <a class="nav-link active mx-4" aria-current="page" href="#NuestroTaller">NUESTRO TALLER</a>
               </li>
               <li class="nav-item dropdown mx-4">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   SERVICIOS
                 </a>
                 <ul id="svs" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Ver servicios</a></li>
+                  <li><a class="dropdown-item" href="#Servicios">Ver servicios</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Reservar un turno</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown mx-4">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   PRODUCTOS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,23 +73,25 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active mx-4" aria-current="page" href="#">CONTACTO</a>
+                <a class="nav-link active mx-4" aria-current="page" href="#Contacto">CONTACTO</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
 
+    <div class="invisible"></div>
+
     <div id="Hero" class="container-fluid">
       <div class="row align-items-center">
           <div class="col text-center">
-              <a href="#" class="btn btn-danger btn-lg p-3" tabindex="-1" role="button" aria-disabled="true">Nuestro Taller</a>
+              <a href="#NuestroTaller" class="btn btn-light btn-lg p-3" tabindex="-1" role="button" aria-disabled="true">Nuestro Taller</a>
           </div>
           <div class="col text-center">
-              <a href="#" class="btn btn-danger btn-lg p-3" tabindex="-1" role="button" aria-disabled="true">Servicios</a>
+              <a href="#Servicios" class="btn btn-light btn-lg p-3" tabindex="-1" role="button" aria-disabled="true">Servicios</a>
           </div>
           <div class="col text-center">
-              <a href="#" class="btn btn-danger btn-lg p-3" tabindex="-1" role="button" aria-disabled="true">Productos</a>
+              <a href="#Productos" class="btn btn-light btn-lg p-3" tabindex="-1" role="button" aria-disabled="true">Productos</a>
           </div>
         </div>
     </div>
@@ -140,7 +144,7 @@
               </div>
 
               <div class="col-12 text-center">
-                <button class="btn btn-danger" type="button">Reservar Turno</button>
+                <button class="btn btn-light" type="button">Reservar Turno</button>
               </div>
           </div>
         </section>
@@ -167,6 +171,9 @@
                   <h3>Filtros</h3>
                 </a></article>
               </div>
+
+              <div id="bk1" class="w-100"></div>
+
               <div class="col text-center">
                 <article><a href="#">
                   <img src="https://cdn.cienradios.com/wp-content/uploads/sites/21/2020/08/cambiar-bater%C3%ADa-auto.jpg">
@@ -194,6 +201,10 @@
                   <h3>Refrigerantes</h3>
                 </a></article>
               </div>
+
+              <div id="bk2" class="w-100"></div>
+
+
               <div class="col text-center">
                 <article><a href="#">
                   <img src="https://cdn.cienradios.com/wp-content/uploads/sites/21/2020/08/cambiar-bater%C3%ADa-auto.jpg">
@@ -228,6 +239,8 @@
                     <label for="Nombre">Nombre</label>
                     <input type="text" id="Nombre" name="Nombre" required minlength="3" maxlength="15" placeholder="Obligatorio">
                   </div>
+
+                  <div id="brk1" class="w-100"></div>
   
                   <div class="col text-center">
                     <label for="Mail">Mail</label>
@@ -239,12 +252,14 @@
                   <div class="col text-center">
                     <label for="Asunto">Asunto</label>
                     <select name="Asunto" id="Asunto">
-                        <option value="curso">Curso</option>
-                        <option value="tratamiento">Tratamiento</option>
+                        <option value="curso">Presupuesto</option>
+                        <option value="tratamiento">Producto</option>
                         <option value="consulta">Consulta</option>
                         <option value="otro">Otro</option>
                     </select>
                   </div>
+
+                  <div id="brk2" class="w-100"></div>
   
                   <div class="col text-center">
                     <label for="Telefono">Teléfono</label>
@@ -298,13 +313,11 @@
               AJ Service Lubricentro<br>
               Viamonte 2486 - Lanús, Argentina <br>
               +54 4228-8853<br>
-              contactocipse@gmail.com
+              mail@gmail.com
           </p>
       </span>
  
           <a href="https://www.facebook.com/CIPSE.EMDR/" target="_blank" rel="noopener noreferrer"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="HTML tutorial"></a>
-          <a href="https://www.instagram.com/cipse/" target="_blank" rel="noopener noreferrer"><img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png" alt="HTML tutorial" ></a>
-          <a href="https://www.linkedin.com/in/cipse-centro-de-psicoterapias-8a77133a/" target="_blank" rel="noopener noreferrer"><img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="HTML tutorial" ></a>
           <a href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer"><img src="https://w7.pngwing.com/pngs/632/756/png-transparent-whatsapp-logo-computer-icons-whatsapp-cdr-text-logo.png" alt="HTML tutorial"></a>
   
       <span id="by">

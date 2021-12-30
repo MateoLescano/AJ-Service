@@ -1,11 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.invisible {
+  position: initial;
+  height: 106px;
+  z-index: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .navbar-brand img {
-  width: 4rem;
-  height: 4rem;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
 .navbar.navbar-expand-lg.navbar-dark {
-  background-color: #000080;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #800020;
 }
 
 .navbar.navbar-expand-lg.navbar-dark a, .navbar.navbar-expand-lg.navbar-dark a.nav-link.active {
@@ -19,7 +38,7 @@
 }
 
 .navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show {
-  background-color: #CF352E;
+  background-color: #003153;
 }
 
 .navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show .dropdown-item {
@@ -27,11 +46,21 @@
 }
 
 .navbar.navbar-expand-lg.navbar-dark .dropdown-menu.show :hover {
-  background-color: #000080;
+  background-color: #800020;
+}
+
+body, html {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 #Hero {
   height: 91vh;
+  width: 100%;
   background-image: url("hero.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -49,10 +78,15 @@
 }
 
 #Hero .row.align-items-center .col.text-center a {
-  background-color: #CF352E;
+  background-color: #800020;
   font-size: 2em;
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
+  color: whitesmoke;
+}
+
+#Hero .row.align-items-center .col.text-center a:hover {
+  background-color: #003153;
 }
 
 main hr {
@@ -80,6 +114,7 @@ main #NuestroTaller {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  scroll-margin-top: 106px;
 }
 
 main #NuestroTaller h2 {
@@ -121,6 +156,7 @@ main #NuestroTaller .Review h4 {
 main #Servicios {
   height: 100%;
   min-height: 100vh;
+  scroll-margin-top: 106px;
 }
 
 main #Servicios .row.align-items-center {
@@ -167,21 +203,23 @@ main #Servicios .row.align-items-center .col.text-center article a {
 }
 
 main #Servicios .row.align-items-center button {
-  background-color: #CF352E;
+  background-color: #800020;
   font-size: 2em;
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
   border-radius: 15px;
   color: whitesmoke;
+  border: solid 2px black;
 }
 
 main #Servicios .row.align-items-center button:hover {
-  background-color: #000080;
+  background-color: #003153;
 }
 
 main #Productos {
   height: 100%;
   min-height: 100vh;
+  scroll-margin-top: 106px;
 }
 
 main #Productos .row.align-items-center {
@@ -219,6 +257,10 @@ main #Productos .row.align-items-center a {
   color: black;
 }
 
+main #Productos .row.align-items-center #bk1, main #Productos .row.align-items-center #bk2 {
+  display: none;
+}
+
 main #Productos .row.align-items-center .col.text-center article img {
   width: 200px;
   height: 200px;
@@ -234,8 +276,10 @@ main #Productos .row.align-items-center .col.text-center article h2 {
 main #Contacto {
   height: 100%;
   min-height: 100vh;
-  background-color: #000080;
+  width: 100%;
+  background-color: #800020;
   color: whitesmoke;
+  scroll-margin-top: 106px;
 }
 
 main #Contacto #ctmain {
@@ -265,7 +309,7 @@ main #Contacto #ctmain #Forma .col.text-center {
 }
 
 main #Contacto #ctmain #Forma input, main #Contacto #ctmain #Forma select, main #Contacto #ctmain #Forma textarea {
-  border: #1b5583 solid 2px;
+  border: #003153 solid 2px;
   border-radius: 5px;
   height: 2.5em;
   width: 80%;
@@ -285,9 +329,9 @@ main #Contacto #ctmain #Forma button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #CF352E;
+  background-color: #003153;
   border: none;
-  color: black;
+  color: whitesmoke;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -307,6 +351,10 @@ main #Contacto #ctmain #Forma button:hover {
   opacity: 1;
   -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.61);
           box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.61);
+}
+
+main #Contacto #ctmain #Forma #brk1, main #Contacto #ctmain #Forma #brk2 {
+  display: none;
 }
 
 main #Contacto #ctmain #Mapa {
@@ -335,9 +383,6 @@ main #Contacto #ctmain #Mapa img {
 }
 
 footer {
-  clear: both;
-  position: relative;
-  background-color: #3b3c36;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +390,15 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  position: relative;
+  background-color: #3b3c36;
+  display: flex;
+  flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   justify-items: center;
@@ -375,5 +429,25 @@ footer #by {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  #brk1, #brk2, #bk1, #bk2 {
+    display: block !important;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer span, footer img {
+    margin: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
