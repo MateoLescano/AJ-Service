@@ -24,7 +24,6 @@ $colorSecundario: #003153;
     margin: 0 auto;
 }
 
-
 .navbar-brand{
     img{
         width: 80px;
@@ -76,13 +75,13 @@ body, html{
     width: 100%;
     margin:0;
     padding:0;
-    height:100%;
     overflow-x: hidden;
 }
 
 #Hero{
     height: 91vh;
     width: 100%;
+    scroll-margin-top: 106px;
     background: {
         image: url("hero.png");
         repeat: no-repeat;
@@ -406,7 +405,17 @@ footer{
        }
   }
 
-  @media (max-width: 768px){    
+  @media (max-width: 768px){   
+      
+    #Hero{
+        background: {
+            image: url("logoM.png");
+            repeat: no-repeat;
+            position: center;
+            size: cover;
+        };
+    }
+
     #brk1, #brk2, #bk1, #bk2{
         display: block !important;
     }
@@ -419,6 +428,29 @@ footer{
         span, img{
             margin: 20px;
         }
-    }
-                
+    }          
+}
+
+@media (min-width: 769px){    
+         /* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px #0000002a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    z-index: 2;
+    background: $colorSecundario;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $colorPrincipal;
+  }
 }
