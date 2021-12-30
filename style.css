@@ -357,6 +357,10 @@ main #Contacto #ctmain #Forma #brk1, main #Contacto #ctmain #Forma #brk2 {
   display: none;
 }
 
+main #Contacto #ctmain #midBrk {
+  display: none;
+}
+
 main #Contacto #ctmain #Mapa {
   height: 100%;
 }
@@ -438,7 +442,7 @@ footer #by {
     background-position: center;
     background-size: cover;
   }
-  #brk1, #brk2, #bk1, #bk2 {
+  #brk1, #brk2, #bk1, #bk2, #midBrk {
     display: block !important;
   }
   footer {

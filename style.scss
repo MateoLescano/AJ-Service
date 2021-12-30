@@ -343,6 +343,10 @@ main {
                 }
     
             }
+
+            #midBrk{
+                display: none;
+            }
     
             #Mapa{
                 height: 100%;
@@ -416,7 +420,7 @@ footer{
         };
     }
 
-    #brk1, #brk2, #bk1, #bk2{
+    #brk1, #brk2, #bk1, #bk2, #midBrk{
         display: block !important;
     }
 
