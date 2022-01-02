@@ -202,18 +202,158 @@ main #Servicios .row.align-items-center .col.text-center article a {
   pointer-events: none;
 }
 
-main #Servicios .row.align-items-center button {
-  background-color: #800020;
-  font-size: 2em;
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
-  border-radius: 15px;
-  color: whitesmoke;
-  border: solid 2px black;
+main #Servicios .row.align-items-center .fill:hover,
+main #Servicios .row.align-items-center .fill:focus {
+  -webkit-box-shadow: inset 0 0 0 2em var(--hover);
+          box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-main #Servicios .row.align-items-center button:hover {
-  background-color: #003153;
+main #Servicios .row.align-items-center .pulse:hover,
+main #Servicios .row.align-items-center .pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+main #Servicios .row.align-items-center .close:hover,
+main #Servicios .row.align-items-center .close:focus {
+  -webkit-box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+          box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+main #Servicios .row.align-items-center .raise:hover,
+main #Servicios .row.align-items-center .raise:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+main #Servicios .row.align-items-center .up:hover,
+main #Servicios .row.align-items-center .up:focus {
+  -webkit-box-shadow: inset 0 -3.25em 0 0 var(--hover);
+          box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+main #Servicios .row.align-items-center .slide:hover,
+main #Servicios .row.align-items-center .slide:focus {
+  -webkit-box-shadow: inset 6.5em 0 0 0 var(--hover);
+          box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+main #Servicios .row.align-items-center .offset {
+  -webkit-box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+          box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+main #Servicios .row.align-items-center .offset:hover, main #Servicios .row.align-items-center .offset:focus {
+  -webkit-box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+          box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+main #Servicios .row.align-items-center .fill {
+  --color: #003153;
+  --hover: #0d0053;
+}
+
+main #Servicios .row.align-items-center .pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+main #Servicios .row.align-items-center .close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+main #Servicios .row.align-items-center .raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+main #Servicios .row.align-items-center .up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+main #Servicios .row.align-items-center .slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+main #Servicios .row.align-items-center .offset {
+  --color: #003153;
+  --hover: #0d0053;
+}
+
+main #Servicios .row.align-items-center button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+main #Servicios .row.align-items-center button:hover, main #Servicios .row.align-items-center button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+main #Servicios .row.align-items-center body {
+  color: #fff;
+  background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #Servicios .row.align-items-center button {
+  width: 25%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background: none;
+  border: 2px solid;
+  border-radius: 15px;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  font-family: "Comfortaa", cursive;
+}
+
+main #Servicios .row.align-items-center h1 {
+  font-weight: 400;
+}
+
+main #Servicios .row.align-items-center code {
+  color: #e4cb58;
+  font: inherit;
 }
 
 main #Productos {
@@ -322,35 +462,151 @@ main #Contacto #ctmain #Forma label {
   font-family: "Comfortaa", cursive;
 }
 
-main #Contacto #ctmain #Forma button {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #003153;
-  border: none;
-  color: whitesmoke;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-family: "Nunito", sans-serif;
-  border-radius: 12px;
-  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  opacity: 0.9;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  display: inline-block;
-  cursor: pointer;
+main #Contacto #ctmain #Forma .fill:hover,
+main #Contacto #ctmain #Forma .fill:focus {
+  -webkit-box-shadow: inset 0 0 0 2em var(--hover);
+          box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-main #Contacto #ctmain #Forma button:hover {
-  opacity: 1;
-  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.61);
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.61);
+main #Contacto #ctmain #Forma .pulse:hover,
+main #Contacto #ctmain #Forma .pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+main #Contacto #ctmain #Forma .close:hover,
+main #Contacto #ctmain #Forma .close:focus {
+  -webkit-box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+          box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+main #Contacto #ctmain #Forma .raise:hover,
+main #Contacto #ctmain #Forma .raise:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+main #Contacto #ctmain #Forma .up:hover,
+main #Contacto #ctmain #Forma .up:focus {
+  -webkit-box-shadow: inset 0 -3.25em 0 0 var(--hover);
+          box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+main #Contacto #ctmain #Forma .slide:hover,
+main #Contacto #ctmain #Forma .slide:focus {
+  -webkit-box-shadow: inset 6.5em 0 0 0 var(--hover);
+          box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+main #Contacto #ctmain #Forma .offset {
+  -webkit-box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+          box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+main #Contacto #ctmain #Forma .offset:hover, main #Contacto #ctmain #Forma .offset:focus {
+  -webkit-box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+          box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+main #Contacto #ctmain #Forma .fill {
+  --color: white;
+  --hover: white;
+}
+
+main #Contacto #ctmain #Forma .pulse {
+  --color: whitesmoke;
+  --hover: whitesmoke;
+}
+
+main #Contacto #ctmain #Forma .close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+main #Contacto #ctmain #Forma .raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+main #Contacto #ctmain #Forma .up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+main #Contacto #ctmain #Forma .slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+main #Contacto #ctmain #Forma .offset {
+  --color: #003153;
+  --hover: #0d0053;
+}
+
+main #Contacto #ctmain #Forma button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+main #Contacto #ctmain #Forma button:hover, main #Contacto #ctmain #Forma button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+main #Contacto #ctmain #Forma body {
+  color: #fff;
+  background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #Contacto #ctmain #Forma button {
+  width: 25%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background: #003153;
+  border: 2px solid;
+  border-radius: 15px;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Contacto #ctmain #Forma h1 {
+  font-weight: 400;
+}
+
+main #Contacto #ctmain #Forma code {
+  color: #e4cb58;
+  font: inherit;
 }
 
 main #Contacto #ctmain #Forma #brk1, main #Contacto #ctmain #Forma #brk2 {
