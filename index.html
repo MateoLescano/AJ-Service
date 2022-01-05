@@ -159,6 +159,8 @@
                         <div class="modal-body">
                           <form id="formTurno" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
 
+                            <input type="hidden" name="_template" value="table">
+
                             <div class="col-12 text-center">
                               <h4>Datos Personales</h4>
                             </div>
@@ -166,7 +168,7 @@
                             <div class="col text-center">
                               <label for="Nombre">Nombre</label>
                               <br>
-                              <input type="text" id="Nombre" name="Nombre" required minlength="3" maxlength="15" placeholder="*">
+                              <input type="text" id="Nombre" name="Nombre" required placeholder="*">
                             </div>
             
                             <div class="col text-center">
@@ -229,17 +231,17 @@
                             </div>
 
                             <div id="cb" class="col ms-5 text-start">
-                              <input type="checkbox" id="Lunes" name="Lunes" value="Lunes">
+                              <input class="cb" type="checkbox" id="Lunes" name="dia" value="Lunes">
                               <label for="Lunes"> Lunes</label><br>
-                              <input type="checkbox" id="Martes" name="Martes" value="Martes">
+                              <input class="cb" type="checkbox" id="Martes" name="dia" value="Martes">
                               <label for="Martes"> Martes</label><br>
-                              <input type="checkbox" id="Miercoles" name="Miercoles" value="Miercoles">
+                              <input class="cb" type="checkbox" id="Miercoles" name="dia" value="Miercoles">
                               <label for="Miercoles"> Miércoles</label><br>
-                              <input type="checkbox" id="Jueves" name="Jueves" value="Jueves">
+                              <input type="checkbox" id="Jueves" name="dia" value="Jueves">
                               <label for="Jueves"> Jueves</label><br>
-                              <input type="checkbox" id="Viernes" name="Viernes" value="Viernes">
+                              <input type="checkbox" id="Viernes" name="dia" value="Viernes">
                               <label for="Viernes"> Viernes</label><br>
-                              <input type="checkbox" id="Sabado" name="Sabado" value="Sabado">
+                              <input type="checkbox" id="Sabado" name="dia" value="Sabado">
                               <label for="Sabado"> Sábado</label>
                             </div>
           
@@ -353,6 +355,7 @@
 
               <form id="Forma" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
                 
+                <input type="hidden" name="_template" value="box">
 
                   <div class="col text-center">
                     <label for="Nombre">Nombre</label>
@@ -450,6 +453,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="checkboxCheck.js"></script>
   </body>
 </html>
