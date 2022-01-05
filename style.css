@@ -202,14 +202,43 @@ main #Servicios .row.align-items-center .col.text-center article a {
   pointer-events: none;
 }
 
-main #Servicios .row.align-items-center .fill:hover,
-main #Servicios .row.align-items-center .fill:focus {
+main #Servicios form {
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+}
+
+main #Servicios form h4 {
+  font-size: 2em;
+  font-family: "Quicksand", sans-serif;
+}
+
+main #Servicios form label {
+  font-weight: 600;
+}
+
+main #Servicios form input, main #Servicios form select {
+  border: 1px solid #800020;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+main #Servicios form #btnEnviar {
+  background-color: #003153;
+  color: whitesmoke;
+}
+
+main #Servicios form #btnEnviar:hover {
+  background-color: #00253f;
+}
+
+main #Servicios #turnoS .fill:hover,
+main #Servicios #turnoS .fill:focus {
   -webkit-box-shadow: inset 0 0 0 2em var(--hover);
           box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-main #Servicios .row.align-items-center .pulse:hover,
-main #Servicios .row.align-items-center .pulse:focus {
+main #Servicios #turnoS .pulse:hover,
+main #Servicios #turnoS .pulse:focus {
   -webkit-animation: pulse 1s;
           animation: pulse 1s;
   -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
@@ -230,89 +259,89 @@ main #Servicios .row.align-items-center .pulse:focus {
   }
 }
 
-main #Servicios .row.align-items-center .close:hover,
-main #Servicios .row.align-items-center .close:focus {
+main #Servicios #turnoS .close:hover,
+main #Servicios #turnoS .close:focus {
   -webkit-box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
           box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
 }
 
-main #Servicios .row.align-items-center .raise:hover,
-main #Servicios .row.align-items-center .raise:focus {
+main #Servicios #turnoS .raise:hover,
+main #Servicios #turnoS .raise:focus {
   -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
           box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   -webkit-transform: translateY(-0.25em);
           transform: translateY(-0.25em);
 }
 
-main #Servicios .row.align-items-center .up:hover,
-main #Servicios .row.align-items-center .up:focus {
+main #Servicios #turnoS .up:hover,
+main #Servicios #turnoS .up:focus {
   -webkit-box-shadow: inset 0 -3.25em 0 0 var(--hover);
           box-shadow: inset 0 -3.25em 0 0 var(--hover);
 }
 
-main #Servicios .row.align-items-center .slide:hover,
-main #Servicios .row.align-items-center .slide:focus {
+main #Servicios #turnoS .slide:hover,
+main #Servicios #turnoS .slide:focus {
   -webkit-box-shadow: inset 6.5em 0 0 0 var(--hover);
           box-shadow: inset 6.5em 0 0 0 var(--hover);
 }
 
-main #Servicios .row.align-items-center .offset {
+main #Servicios #turnoS .offset {
   -webkit-box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
           box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
 }
 
-main #Servicios .row.align-items-center .offset:hover, main #Servicios .row.align-items-center .offset:focus {
+main #Servicios #turnoS .offset:hover, main #Servicios #turnoS .offset:focus {
   -webkit-box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
           box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
 
-main #Servicios .row.align-items-center .fill {
+main #Servicios #turnoS .fill {
   --color: #003153;
   --hover: #0d0053;
 }
 
-main #Servicios .row.align-items-center .pulse {
+main #Servicios #turnoS .pulse {
   --color: #ef6eae;
   --hover: #ef8f6e;
 }
 
-main #Servicios .row.align-items-center .close {
+main #Servicios #turnoS .close {
   --color: #ff7f82;
   --hover: #ffdc7f;
 }
 
-main #Servicios .row.align-items-center .raise {
+main #Servicios #turnoS .raise {
   --color: #ffa260;
   --hover: #e5ff60;
 }
 
-main #Servicios .row.align-items-center .up {
+main #Servicios #turnoS .up {
   --color: #e4cb58;
   --hover: #94e458;
 }
 
-main #Servicios .row.align-items-center .slide {
+main #Servicios #turnoS .slide {
   --color: #8fc866;
   --hover: #66c887;
 }
 
-main #Servicios .row.align-items-center .offset {
+main #Servicios #turnoS .offset {
   --color: #003153;
   --hover: #0d0053;
 }
 
-main #Servicios .row.align-items-center button {
+main #Servicios #turnoS button {
   color: var(--color);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
-main #Servicios .row.align-items-center button:hover, main #Servicios .row.align-items-center button:focus {
+main #Servicios #turnoS button:hover, main #Servicios #turnoS button:focus {
   border-color: var(--hover);
   color: #fff;
 }
 
-main #Servicios .row.align-items-center body {
+main #Servicios #turnoS body {
   color: #fff;
   background: #17181c;
   font: 300 1em 'Fira Sans', sans-serif;
@@ -331,7 +360,7 @@ main #Servicios .row.align-items-center body {
   display: flex;
 }
 
-main #Servicios .row.align-items-center button {
+main #Servicios #turnoS button {
   width: 25%;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -347,11 +376,11 @@ main #Servicios .row.align-items-center button {
   font-family: "Comfortaa", cursive;
 }
 
-main #Servicios .row.align-items-center h1 {
+main #Servicios #turnoS h1 {
   font-weight: 400;
 }
 
-main #Servicios .row.align-items-center code {
+main #Servicios #turnoS code {
   color: #e4cb58;
   font: inherit;
 }

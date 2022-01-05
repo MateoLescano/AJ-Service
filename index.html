@@ -17,16 +17,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
     <title>AJ Service Lubricantes</title>
   </head>
 
   <!-- target="_blank" rel="noopener noreferrer" -->
-
   <body>
 
     
@@ -146,7 +143,127 @@
               </div>
 
               <div class="col-12 text-center">
-                <button class="fill" type="button">Reservar Turno</button>
+
+                <div id="turnoS"> 
+                  <button class="fill" type="button" data-bs-toggle="modal" data-bs-target="#modalTurno">Reservar Turno</button>
+                </div>
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalTurno" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Solicitar Turno</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="formTurno" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
+
+                            <div class="col-12 text-center">
+                              <h4>Datos Personales</h4>
+                            </div>
+
+                            <div class="col text-center">
+                              <label for="Nombre">Nombre</label>
+                              <br>
+                              <input type="text" id="Nombre" name="Nombre" required minlength="3" maxlength="15" placeholder="*">
+                            </div>
+            
+                            <div class="col text-center">
+                              <label for="Mail">Mail</label>
+                              <br>
+                              <input type="email" id="Mail" name="Mail" required placeholder="*">
+                            </div>
+            
+                            <div class="col text-center">
+                              <label for="Telefono">Teléfono</label>
+                              <br>
+                              <input type="tel" id="Telefono" name="Telefono">
+                            </div>
+
+                            <div class="col-12 text-center">
+                              <h4>Datos del Vehiculo</h4>
+                            </div>
+
+                            <div class="col text-center">
+                              <label for="Modelo">Modelo</label>
+                              <br>
+                              <input type="text" id="Modelo" name="Modelo" required placeholder="Obligatorio">
+                            </div>
+            
+                            <div class="col text-center">
+                              <label for="Patente">Patente</label>
+                              <br>
+                              <input type="text" id="Patente" name="Patente" required placeholder="Obligatorio">
+                            </div>
+
+                            <div class="col text-center">
+                              <label for="Nafta">Nafta</label>
+                              <br>
+                              <input type="text" id="Nafta" name="Nafta" required placeholder="Obligatorio">
+                            </div>
+            
+                            <div class="col ms-3 text-start">
+                              <input type="radio" id="Fosa" name="Lugar" value="Fosa" required>
+                              <label for="Fosa">Fosa</label><br>
+                              <input type="radio" id="Elevador" name="Lugar" value="Elevador">
+                              <label for="Elevador">Elevador</label><br>
+                              <input type="radio" id="Cualquiera" name="Lugar" value="Cualquiera">
+                              <label for="Cualquiera">Cualquiera</label>
+                            </div>
+
+                            <div class="col-12 text-center">
+                              <h4>Datos del turno</h4>
+                              <p>Elija los días que pueda asistir al turno e indique dentro de que rango horario, y nos contactaremos para ofrecerle el turno disponible más adecuado.</p>
+                            </div>
+
+                            <div class="col-12 text-center">
+                              <label for="Asunto">Servicio</label>
+                              <br>
+                              <select name="Asunto" id="Asunto">
+                                  <option value="aceite">Cambio de aceites y filtros</option>
+                                  <option value="escobilla">Sustitución de escobillas</option>
+                                  <option value="bateria">Sustitución de baterías</option>
+                                  <option value="otro">Otro</option>
+                              </select>
+                            </div>
+
+                            <div id="cb" class="col ms-5 text-start">
+                              <input type="checkbox" id="Lunes" name="Lunes" value="Lunes">
+                              <label for="Lunes"> Lunes</label><br>
+                              <input type="checkbox" id="Martes" name="Martes" value="Martes">
+                              <label for="Martes"> Martes</label><br>
+                              <input type="checkbox" id="Miercoles" name="Miercoles" value="Miercoles">
+                              <label for="Miercoles"> Miércoles</label><br>
+                              <input type="checkbox" id="Jueves" name="Jueves" value="Jueves">
+                              <label for="Jueves"> Jueves</label><br>
+                              <input type="checkbox" id="Viernes" name="Viernes" value="Viernes">
+                              <label for="Viernes"> Viernes</label><br>
+                              <input type="checkbox" id="Sabado" name="Sabado" value="Sabado">
+                              <label for="Sabado"> Sábado</label>
+                            </div>
+          
+            
+                            <div class="col me-5 text-center">
+                              <label for="Disponibilidad">Disponibilidad Horaria</label>
+                              <br>
+                              <input type="text" id="Disponibilidad" name="Disponibilidad" required placeholder="De 8:00 a 19:00">
+                            </div>
+            
+                            <div class="col-12 text-center">
+                              <button id="btnEnviar" class="btn" type="submit">Solicitar Turno</button>
+                            </div>
+          
+                          
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
               </div>
           </div>
         </section>
@@ -333,5 +450,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
   </body>
 </html>
