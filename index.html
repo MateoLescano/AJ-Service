@@ -168,13 +168,13 @@
                             <div class="col text-center">
                               <label for="Nombre">Nombre</label>
                               <br>
-                              <input type="text" id="Nombre" name="Nombre" required placeholder="*">
+                              <input type="text" id="Nombre" name="Nombre" required placeholder="Obligatorio">
                             </div>
             
                             <div class="col text-center">
                               <label for="Mail">Mail</label>
                               <br>
-                              <input type="email" id="Mail" name="Mail" required placeholder="*">
+                              <input type="email" id="Mail" name="Mail" required placeholder="Obligatorio">
                             </div>
             
                             <div class="col text-center">
@@ -188,30 +188,44 @@
                             </div>
 
                             <div class="col text-center">
-                              <label for="Modelo">Modelo</label>
+                              <label for="Modelo">Marca y Modelo</label>
                               <br>
                               <input type="text" id="Modelo" name="Modelo" required placeholder="Obligatorio">
                             </div>
             
                             <div class="col text-center">
-                              <label for="Patente">Patente</label>
+                              <label for="Año">Año del vehiculo</label>
                               <br>
-                              <input type="text" id="Patente" name="Patente" required placeholder="Obligatorio">
+                              <input type="number" id="Año" name="Año" required placeholder="Obligatorio">
                             </div>
 
                             <div class="col text-center">
-                              <label for="Nafta">Nafta</label>
+                              <label for="Cilindrada">Cilindrada</label>
                               <br>
-                              <input type="text" id="Nafta" name="Nafta" required placeholder="Obligatorio">
+                              <input type="text" id="Cilindrada" name="Cilindrada" required placeholder="Obligatorio">
                             </div>
+
+                            <div class="col text-center">
+
+                              <label>El vehiculo lleva:</label>
+                              <br>
+                              <input type="radio" id="Nafta" name="NaftaODiesel" value="Nafta" required>
+                              <label class="notW" for="Nafta">Nafta</label><br>
+                              <input type="radio" id="Diesel" name="NaftaODiesel" value="Diesel">
+                              <label class="notW" for="Diesel">Diesel</label><br>
+                            </div>
+
+                            
             
-                            <div class="col ms-3 text-start">
+                            <div class="col-12 text-center">
+                              <label>Reservar:</label>
+                              <br>
                               <input type="radio" id="Fosa" name="Lugar" value="Fosa" required>
-                              <label for="Fosa">Fosa</label><br>
+                              <label class="notW" for="Fosa">Fosa</label><br>
                               <input type="radio" id="Elevador" name="Lugar" value="Elevador">
-                              <label for="Elevador">Elevador</label><br>
-                              <input type="radio" id="Cualquiera" name="Lugar" value="Cualquiera">
-                              <label for="Cualquiera">Cualquiera</label>
+                              <label class="notW" for="Elevador">Elevador</label><br>
+                              <input type="radio" id="Cualquiera" name="Lugar" value="Cualquiera" checked>
+                              <label class="notW" for="Cualquiera">Cualquiera</label>
                             </div>
 
                             <div class="col-12 text-center">
@@ -220,29 +234,33 @@
                             </div>
 
                             <div class="col-12 text-center">
-                              <label for="Asunto">Servicio</label>
+                              <label for="Servicio">Servicio</label>
                               <br>
-                              <select name="Asunto" id="Asunto">
-                                  <option value="aceite">Cambio de aceites y filtros</option>
+                              <select name="Servicio" id="selectServicio">
+                                  <option value="aceite">Cambio de aceite</option>
+                                  <option value="filtros">Cambio de filtros</option>
                                   <option value="escobilla">Sustitución de escobillas</option>
                                   <option value="bateria">Sustitución de baterías</option>
                                   <option value="otro">Otro</option>
                               </select>
                             </div>
 
+                            <div id="divFiltros" class="col-12 text-center">
+                              
+                            </div>
+
                             <div id="cb" class="col ms-5 text-start">
+                              <label><b>Dia:</b></label> <br>
                               <input class="cb" type="checkbox" id="Lunes" name="dia" value="Lunes">
-                              <label for="Lunes"> Lunes</label><br>
+                              <label class="notW" for="Lunes"> Lunes</label><br>
                               <input class="cb" type="checkbox" id="Martes" name="dia" value="Martes">
-                              <label for="Martes"> Martes</label><br>
+                              <label class="notW" for="Martes"> Martes</label><br>
                               <input class="cb" type="checkbox" id="Miercoles" name="dia" value="Miercoles">
-                              <label for="Miercoles"> Miércoles</label><br>
+                              <label class="notW" for="Miercoles"> Miércoles</label><br>
                               <input type="checkbox" id="Jueves" name="dia" value="Jueves">
-                              <label for="Jueves"> Jueves</label><br>
+                              <label class="notW" for="Jueves"> Jueves</label><br>
                               <input type="checkbox" id="Viernes" name="dia" value="Viernes">
-                              <label for="Viernes"> Viernes</label><br>
-                              <input type="checkbox" id="Sabado" name="dia" value="Sabado">
-                              <label for="Sabado"> Sábado</label>
+                              <label class="notW" for="Viernes"> Viernes</label>
                             </div>
           
             
@@ -339,9 +357,120 @@
                 </a></article>
               </div>
 
-              <div class="col-12 text-center">
-                <a href="#"><h3 id="linkTodos">Ver todos los productos</h3></a>
+              <div class="modalProd">
+                <div id="btnDiv2" class="col-12 text-center">
+                  <button class="fill" type="button" data-bs-toggle="modal" data-bs-target="#modalProducto">Solicitar Productos</button>
+                </div>
+
+              <div class="modal fade" id="modalProducto" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Solicitar Productos</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="formProd" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
+
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="col-12 text-center">
+                          <h4>Datos del Comprador</h4>
+                        </div>
+
+                        <div class="col text-center">
+                          <label for="Nombre">Nombre y Apellido</label>
+                          <br>
+                          <input type="text" id="Nombre" name="Nombre" required placeholder="Obligatorio">
+                        </div>
+
+                        <div class="col text-center">
+                          <label for="DNI">DNI</label>
+                          <br>
+                          <input type="number" id="DNI" name="DNI" minlength="6" maxlength="8" required placeholder="Obligatorio">
+                        </div>
+        
+                        <div class="col text-center">
+                          <label for="Mail">Mail</label>
+                          <br>
+                          <input type="email" id="Mail" name="Mail" required placeholder="Obligatorio">
+                        </div>
+        
+                        <div class="col text-center">
+                          <label for="Telefono">Teléfono</label>
+                          <br>
+                          <input type="tel" id="Telefono" name="Telefono" required placeholder="Obligatorio">
+                        </div>
+
+                        <div class="col-12 text-center">
+                          <h4>Datos del producto</h4>
+                          <p>Indique cuantas unidades y que productos desea. Incluya tantos detalles del producto como sea posible, o si prefiere ser asesorado por nuestros expertos.</p>
+                        </div>
+
+                        <div class="col-12 text-center">
+                          <label for="productos">Productos solicitados:</label>
+                          <br>
+                          <textarea name="productos" id="productos" rows="3"></textarea>
+                        </div>
+      
+        
+                        <div class="col text-center">
+                          <label for="Retiro">¿Cuando planea retirar los productos?</label>
+                          <br>
+                          <input type="text" id="Retiro" name="Retiro" required placeholder="L. a V. de 8:00 a 18:00">
+                        </div>
+
+                        <div class="col-12 text-center">
+                          <h4>Datos del Vehiculo <br> (Opcional)</h4>
+                          <p>Si desea ser asesorado por nuestros expertos, por favor complete los datos del vehiculo</p>
+                        </div>
+
+                        <div class="col text-center">
+                          <label for="Modelo">Marca y Modelo</label>
+                          <br>
+                          <input type="text" id="Modelo" name="Modelo">
+                        </div>
+        
+                        <div class="col text-center">
+                          <label for="Año">Año del vehiculo</label>
+                          <br>
+                          <input type="number" id="Año" name="Año">
+                        </div>
+
+                        <div class="col text-center">
+                          <label for="Cilindrada">Cilindrada</label>
+                          <br>
+                          <input type="text" id="Cilindrada" name="Cilindrada">
+                        </div>
+
+                        <div class="col text-center">
+
+                          <label>El vehiculo lleva:</label>
+                          <br>
+                          <input type="radio" id="Nafta" name="NaftaODiesel" value="Nafta">
+                          <label class="notW" for="Nafta">Nafta</label><br>
+                          <input type="radio" id="Diesel" name="NaftaODiesel" value="Diesel">
+                          <label class="notW" for="Diesel">Diesel</label><br>
+                        </div>
+        
+                        <div class="col-12 text-center">
+                          <p>Luego de solicitar los productos será contactado para confirmar la disponbilidad de los mismos y el monto total a abonar</p>
+                          <button id="btnEnviar" class="btn" type="submit">Solicitar Productos</button>
+                        </div>
+      
+                      
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              </div>
+
+              
 
             </div> 
         </section>
@@ -455,5 +584,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="checkboxCheck.js"></script>
+    <script src="FiltrosExtend.js"></script>
   </body>
 </html>

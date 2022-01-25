@@ -14,6 +14,166 @@
   margin: 0 auto;
 }
 
+#btnDiv2 .fill:hover,
+#btnDiv2 .fill:focus, #turnoS .fill:hover,
+#turnoS .fill:focus {
+  -webkit-box-shadow: inset 0 0 0 2em var(--hover);
+          box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+#btnDiv2 .pulse:hover,
+#btnDiv2 .pulse:focus, #turnoS .pulse:hover,
+#turnoS .pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+#btnDiv2 .close:hover,
+#btnDiv2 .close:focus, #turnoS .close:hover,
+#turnoS .close:focus {
+  -webkit-box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+          box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+#btnDiv2 .raise:hover,
+#btnDiv2 .raise:focus, #turnoS .raise:hover,
+#turnoS .raise:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+#btnDiv2 .up:hover,
+#btnDiv2 .up:focus, #turnoS .up:hover,
+#turnoS .up:focus {
+  -webkit-box-shadow: inset 0 -3.25em 0 0 var(--hover);
+          box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+#btnDiv2 .slide:hover,
+#btnDiv2 .slide:focus, #turnoS .slide:hover,
+#turnoS .slide:focus {
+  -webkit-box-shadow: inset 6.5em 0 0 0 var(--hover);
+          box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+#btnDiv2 .offset, #turnoS .offset {
+  -webkit-box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+          box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+#btnDiv2 .offset:hover, #btnDiv2 .offset:focus, #turnoS .offset:hover, #turnoS .offset:focus {
+  -webkit-box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+          box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+#btnDiv2 .fill, #turnoS .fill {
+  --color: #003153;
+  --hover: #0d0053;
+}
+
+#btnDiv2 .pulse, #turnoS .pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+#btnDiv2 .close, #turnoS .close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+#btnDiv2 .raise, #turnoS .raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+#btnDiv2 .up, #turnoS .up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+#btnDiv2 .slide, #turnoS .slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+#btnDiv2 .offset, #turnoS .offset {
+  --color: #003153;
+  --hover: #0d0053;
+}
+
+#btnDiv2 button, #turnoS button {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#btnDiv2 button:hover, #btnDiv2 button:focus, #turnoS button:hover, #turnoS button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+#btnDiv2 body, #turnoS body {
+  color: #fff;
+  background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#btnDiv2 button, #turnoS button {
+  width: 25%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background: none;
+  border: 2px solid;
+  border-radius: 15px;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  font-family: "Comfortaa", cursive;
+}
+
+#btnDiv2 h1, #turnoS h1 {
+  font-weight: 400;
+}
+
+#btnDiv2 code, #turnoS code {
+  color: #e4cb58;
+  font: inherit;
+}
+
 .navbar-brand img {
   width: 80px;
   height: 80px;
@@ -216,6 +376,17 @@ main #Servicios form label {
   font-weight: 600;
 }
 
+main #Servicios form #divFiltros {
+  margin-top: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main #Servicios form .notW {
+  font-weight: 200;
+}
+
 main #Servicios form input, main #Servicios form select {
   border: 1px solid #800020;
   border-radius: 3px;
@@ -229,160 +400,6 @@ main #Servicios form #btnEnviar {
 
 main #Servicios form #btnEnviar:hover {
   background-color: #00253f;
-}
-
-main #Servicios #turnoS .fill:hover,
-main #Servicios #turnoS .fill:focus {
-  -webkit-box-shadow: inset 0 0 0 2em var(--hover);
-          box-shadow: inset 0 0 0 2em var(--hover);
-}
-
-main #Servicios #turnoS .pulse:hover,
-main #Servicios #turnoS .pulse:focus {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
-          box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 var(--hover);
-            box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 var(--hover);
-            box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-main #Servicios #turnoS .close:hover,
-main #Servicios #turnoS .close:focus {
-  -webkit-box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
-          box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
-}
-
-main #Servicios #turnoS .raise:hover,
-main #Servicios #turnoS .raise:focus {
-  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em);
-}
-
-main #Servicios #turnoS .up:hover,
-main #Servicios #turnoS .up:focus {
-  -webkit-box-shadow: inset 0 -3.25em 0 0 var(--hover);
-          box-shadow: inset 0 -3.25em 0 0 var(--hover);
-}
-
-main #Servicios #turnoS .slide:hover,
-main #Servicios #turnoS .slide:focus {
-  -webkit-box-shadow: inset 6.5em 0 0 0 var(--hover);
-          box-shadow: inset 6.5em 0 0 0 var(--hover);
-}
-
-main #Servicios #turnoS .offset {
-  -webkit-box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
-          box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
-}
-
-main #Servicios #turnoS .offset:hover, main #Servicios #turnoS .offset:focus {
-  -webkit-box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
-          box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
-}
-
-main #Servicios #turnoS .fill {
-  --color: #003153;
-  --hover: #0d0053;
-}
-
-main #Servicios #turnoS .pulse {
-  --color: #ef6eae;
-  --hover: #ef8f6e;
-}
-
-main #Servicios #turnoS .close {
-  --color: #ff7f82;
-  --hover: #ffdc7f;
-}
-
-main #Servicios #turnoS .raise {
-  --color: #ffa260;
-  --hover: #e5ff60;
-}
-
-main #Servicios #turnoS .up {
-  --color: #e4cb58;
-  --hover: #94e458;
-}
-
-main #Servicios #turnoS .slide {
-  --color: #8fc866;
-  --hover: #66c887;
-}
-
-main #Servicios #turnoS .offset {
-  --color: #003153;
-  --hover: #0d0053;
-}
-
-main #Servicios #turnoS button {
-  color: var(--color);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-main #Servicios #turnoS button:hover, main #Servicios #turnoS button:focus {
-  border-color: var(--hover);
-  color: #fff;
-}
-
-main #Servicios #turnoS body {
-  color: #fff;
-  background: #17181c;
-  font: 300 1em 'Fira Sans', sans-serif;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main #Servicios #turnoS button {
-  width: 25%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  background: none;
-  border: 2px solid;
-  border-radius: 15px;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-  font-size: 1.5em;
-  font-family: "Comfortaa", cursive;
-}
-
-main #Servicios #turnoS h1 {
-  font-weight: 400;
-}
-
-main #Servicios #turnoS code {
-  color: #e4cb58;
-  font: inherit;
 }
 
 main #Productos {
@@ -428,6 +445,50 @@ main #Productos .row.align-items-center a {
 
 main #Productos .row.align-items-center #bk1, main #Productos .row.align-items-center #bk2 {
   display: none;
+}
+
+main #Productos .row.align-items-center form {
+  font-size: 1em;
+  font-family: "Quicksand", sans-serif;
+}
+
+main #Productos .row.align-items-center form h4 {
+  font-size: 2em;
+  font-family: "Quicksand", sans-serif;
+}
+
+main #Productos .row.align-items-center form label {
+  font-weight: 600;
+}
+
+main #Productos .row.align-items-center form #divFiltros {
+  margin-top: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main #Productos .row.align-items-center form .notW {
+  font-weight: 200;
+}
+
+main #Productos .row.align-items-center form input, main #Productos .row.align-items-center form select, main #Productos .row.align-items-center form textarea {
+  border: 1px solid #800020;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+main #Productos .row.align-items-center form textarea {
+  width: 80%;
+}
+
+main #Productos .row.align-items-center form #btnEnviar {
+  background-color: #003153;
+  color: whitesmoke;
+}
+
+main #Productos .row.align-items-center form #btnEnviar:hover {
+  background-color: #00253f;
 }
 
 main #Productos .row.align-items-center .col.text-center article img {
