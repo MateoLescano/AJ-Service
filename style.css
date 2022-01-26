@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+* .dropdown-divider {
+  color: white;
+}
+
 .invisible {
   position: initial;
   height: 106px;

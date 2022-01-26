@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png"/>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -51,7 +51,7 @@
                 <ul id="svs" class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#Servicios">Ver servicios</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Reservar un turno</a></li>
+                  <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalTurno">Reservar un turno</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown mx-4">
@@ -59,16 +59,16 @@
                   PRODUCTOS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Lubricantes</a></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Filtros</a></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Aditivos</a></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Grasas</a></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Baterías</a></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Refrigerantes</a></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Escobillas</a></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Liquido de Frenos</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Lubricantes</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Filtros</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Aditivos</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Grasas</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Baterías</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Refrigerantes</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Escobillas</a></li>
+                  <li><a class="dropdown-item" href="#Productos"  rel="noopener noreferrer">Liquido de Frenos</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#" target="_blank" rel="noopener noreferrer">Ver todos</a></li>
+                  <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalProducto"  rel="noopener noreferrer">Solicitar Productos</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -145,7 +145,7 @@
               <div class="col-12 text-center">
 
                 <div id="turnoS"> 
-                  <button class="fill" type="button" data-bs-toggle="modal" data-bs-target="#modalTurno">Reservar Turno</button>
+                  <button id="btnS" class="fill" type="button" data-bs-toggle="modal" data-bs-target="#modalTurno">Reservar Turno</button>
                 </div>
                 
                   <!-- Modal -->
@@ -359,7 +359,7 @@
 
               <div class="modalProd">
                 <div id="btnDiv2" class="col-12 text-center">
-                  <button class="fill" type="button" data-bs-toggle="modal" data-bs-target="#modalProducto">Solicitar Productos</button>
+                  <button id="btnP" class="fill" type="button" data-bs-toggle="modal" data-bs-target="#modalProducto">Solicitar Productos</button>
                 </div>
 
               <div class="modal fade" id="modalProducto" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
